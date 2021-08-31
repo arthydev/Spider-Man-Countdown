@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+body {
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #22448F, #DB0518);
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.head img{
+    margin-top: 150px;
+    width: 30%;
+    height: auto;
+ }
+ 
+.head p {
+     font-weight: bold;
+     margin-top: 50px;
+     font-size: 40px;
+ }
+
+
+
+.head {
+font-family: 'Marvel', sans-serif;
+display: flex;
+flex-direction:column;
+justify-content: center;
+align-items: center;
+color: white;
+text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+margin-bottom: 50px;
+}
+
+.container{
+    margin-bottom: 200px;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  li {
+    list-style: none;
+  }
+  
+  .countdown li {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    padding-left: 0;
+    padding-right: 0;
+    color:  white;
+    background: #011526;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    text-shadow: 2px 2px #8C031C;
+    cursor: default;
+  }
+
+  .main li p{
+    font-size: 30px;
+  }
+
+  .main span {
+      font-size: 50px;
+      margin-bottom: 105px;
+  }
+
+footer{
+    font-family: 'Lato', sans-serif;
+    background-color: #1B1B1D;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: 2vw;
+    
+}
+ 
+footer i{
+    font-size: 30px;
+    margin-left: 10px;
+    
+}
+
+@media screen and (max-width: 1024px) {
+
+    .head img{
+        margin-top: 150px;
+        width: 50%;
+     }
+
+    .head p{
+        font-size: 30px;
+    }
+
+    .countdown li {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .container{
+        margin-bottom: 60px;
+    }
+
+
+    footer{
+        height: 5vw; 
+    }
+}   
+
+@media screen and (max-width: 650px) {
+
+    .head img{
+        margin-top: 150px;
+        width: 100%;
+     }
+
+    .head p{
+        font-size: 30px;
+    }
+
+    .countdown li {
+        margin: 0;
+        border-radius: 0;
+    }
+
+
+    footer{
+        height: 10vw; 
+    }
+}
